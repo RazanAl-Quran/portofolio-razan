@@ -5,7 +5,7 @@ const express = require('express'); //npm install express
 
 // server has all the Express properities and methods
 const server = express();
-const PORT = 3030;
+const PORT = process.env.PORT || 3030;
 
 // to access an file in public directory
 server.use(express.static('./public'));
